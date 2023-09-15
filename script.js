@@ -59,17 +59,17 @@ function weatherDetails(info){
         const {temp, feels_like, humidity} = info.main;
 
         if(id == 800){
-            Img.src = "images/clear.png";
+            Img.src = "clear.png";
         }else if(id >= 200 && id <= 232){
-            Img.src = "icons/mist.png";  
+            Img.src = "mist.png";  
         }else if(id >= 600 && id <= 622){
-            Img.src = "images/snow.png";
+            Img.src = "snow.png";
         }else if(id >= 701 && id <= 781){
-            Img.src = "images/wind.png";
+            Img.src = "wind.png";
         }else if(id >= 801 && id <= 804){
-            Img.src = "images/clouds.png";
+            Img.src = "clouds.png";
         }else if((id >= 500 && id <= 531) || (id >= 300 && id <= 321)){
-            Img.src = "images/rain.png";
+            Img.src = "rain.png";
         }
         
         weatherPart.querySelector(".temp .numb").innerText = Math.floor(temp);
